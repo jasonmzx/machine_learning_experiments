@@ -28,14 +28,14 @@ Some exercises questions i've done from Chapter 1.) Exercises section of the boo
 - Offline Learning is when a Neural Network is trained initially, once in production and classifiying un-seen data, this new data wouldn't affect the current model. This is good when you know a **model** is working well for it's use, and you don't want it to get skewed by new data.
 
 **What is out-of-core Learning? :**
+- This is when you're training an ML algorithm on a <h2>HUGE</h2> dataset, and can't fit all the data on your machine, so you extracts parts of the Data (from the cloud, TCP, whatever...) runs a training step with the small extracted portion of data, then redo the process with the next bit of data. This way you can use massive datasets to train Neural Nets even if you have limited data storage.
 
-
-**Instance Based VS. Model Based Machine Learning**
+**What's Instance Based & Model Based *Machine Learning?* :**
 - Instance Based ML is when a new and unknown datapoint is classified by it's surroundings data points which are known, it basically takes a similarity measure to all surrounding entries *(In terms of positon on the graph in this case,but more boardly in some vector space)*, then from here, based on all it's findings, will calculate some kind of mean similarity value, then associate to the most similar classification.
 ![Instance Based](./static/img/instance_based_ml.png)
 
 - Model Based ML is when the training data is modelled mathematically, and has a very specific definition of what is, and what is not. Think of Model Based ML to have a continuous perimeter arround certain datapoints, *modelling* that region, whereas Instance Based works with more relative, similar and discrete points instead.
-- Essentially, the Model for the Data is generated once, and whenever an known datapoint needs to get classified, it can very quickly view which model fits the data best. *(In this case it's the stars section of the chart)*
+- Essentially, the Model for the Data is generated once, and whenever unknown datapoints need to get classified, it can very quickly view if the entry fits the model or not. Or in more complex applications, which model does it fit best? *(In this case it's the stars section of the chart)*
 ![Model Based](./static/img/model_based_ml.png)
 
 ### Some Applications:
