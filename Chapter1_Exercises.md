@@ -14,7 +14,7 @@ Some exercises questions i've done from Chapter 1.) Exercises section of the boo
 **What is Unsupervised Learning, and some common applications? :**
 - Unsupervised learning, also known as unsupervised machine learning, uses machine learning algorithms to analyze and cluster unlabeled datasets. [IBM ressource](https://www.ibm.com/topics/unsupervised-learning#:~:text=the%20next%20step-,What%20is%20unsupervised%20learning%3F,the%20need%20for%20human%20intervention.) 
 
-**What is Semi-Supervised Learning, and give an application : **
+**What is Semi-Supervised Learning, and give an application :**
 - Semi-supervised learning is when the algorithm is trained using both *Labelled* and *Un-Labelled* data.
 
 - **EXAMPLE:** Google Photos, when you upload photos to google, they can recognize people, animals and other specific elements within the picture. These photo uploads would be the *unsupervised* part of the data (un-labelled). **Now,** in Google Photos, you can select a section of the imagine and *label* people & pets, these would be the labelled instances of the data. Labelling an area on a picture as `Jason, a human male`. Google Photos can identify people very efficiently, thanks to the unsupervised portion; Massive amount of data they have on the physical appearance of humans.
@@ -29,6 +29,10 @@ Some exercises questions i've done from Chapter 1.) Exercises section of the boo
 
 **What is out-of-core Learning? :**
 
+
+**Instance Based VS. Model Based Machine Learning**
+- Instance Based ML is when a new and known datapoint is classified by it's surroundings, it basically takes a similarity measure to all surrounding entries *(In terms of positon on the graph, or more boardly in some vector space)*, then from here, based on all it's findings, will calculate some kind of mean similarity value, then associate to the most similar.
+![Instance Based](./static/img/instance_based_ml.png)
 
 
 ### Some Applications:
