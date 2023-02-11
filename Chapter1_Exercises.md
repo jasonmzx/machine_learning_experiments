@@ -31,9 +31,12 @@ Some exercises questions i've done from Chapter 1.) Exercises section of the boo
 
 
 **Instance Based VS. Model Based Machine Learning**
-- Instance Based ML is when a new and known datapoint is classified by it's surroundings, it basically takes a similarity measure to all surrounding entries *(In terms of positon on the graph, or more boardly in some vector space)*, then from here, based on all it's findings, will calculate some kind of mean similarity value, then associate to the most similar.
+- Instance Based ML is when a new and unknown datapoint is classified by it's surroundings data points which are known, it basically takes a similarity measure to all surrounding entries *(In terms of positon on the graph in this case,but more boardly in some vector space)*, then from here, based on all it's findings, will calculate some kind of mean similarity value, then associate to the most similar classification.
 ![Instance Based](./static/img/instance_based_ml.png)
 
+- Model Based ML is when the training data is modelled mathematically, and has a very specific definition of what is, and what is not. Think of Model Based ML to have a continuous perimeter arround certain datapoints, *modelling* that region, whereas Instance Based works with more relative, similar and discrete points instead.
+- Essentially, the Model for the Data is generated once, and whenever an known datapoint needs to get classified, it can very quickly view which model fits the data best. *(In this case it's the stars section of the chart)*
+![Model Based](./static/img/model_based_ml.png)
 
 ### Some Applications:
 
