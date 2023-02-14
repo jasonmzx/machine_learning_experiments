@@ -1,0 +1,3 @@
+For Jason:
+
+& C:\Users\jason\Documents\GitHub\machine_learning_experiments\Chapter2_Housing_Median_Model\ml_venv\Scripts\Activate.ps1
