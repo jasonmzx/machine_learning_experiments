@@ -25,5 +25,29 @@ In the **for loop**, Iterating over the Stratified Split data specifically by th
 
 ## Random Sampling:
 
-![Random Sampling](./static/img/stratified_sampled.png)
+![Random Sampling](./static/img/random_sample.png)
 
+```python
+import numpy as np
+
+# For illustration only. Sklearn has train_test_split()
+def split_train_test(data, test_ratio):
+    shuffled_indices = np.random.permutation(len(data))
+    test_set_size = int(len(data) * test_ratio)
+    test_indices = shuffled_indices[:test_set_size]
+    train_indices = shuffled_indices[test_set_size:]
+    return data.iloc[train_indices], data.iloc[test_indices]
+```
+
+- This block of code is basically equivalent to Sklearn's random test set splitter.
+- Uses NumPy to get permutation of the data (randomly sorted), then splits to at `test_ratio` and returns.
+
+**Behold, the Sklearn equivalent:** 
+
+```python
+from sklearn.model_selection import train_test_split
+
+train_set, test_set = train_test_split(housing, test_size=0.2, random_state=42)
+```
+
+- Notice that we can also use the `random_state` param again for replicable randomness!
