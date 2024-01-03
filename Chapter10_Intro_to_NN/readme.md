@@ -38,7 +38,15 @@ Certainly! Your notes on Information are a great starting point. Let's extend th
 
 ---
 
-Why Cross-Entropy for Classification Tasks? 
+### Why Cross-Entropy for Classification Tasks? 
 
+As Cross-Entropy basically looks at the different between 2 probablistic distributions, but more specifically, it quantifies how a predicted probability distribution diverges from the actual distribution. It's a measure of surprise, originating from information theory! 
+<br>
+It's very useful for Classification where we see the Output Array *(The 10 ouputs in the softmax layer for ex. )* with varying confidence (probabilities) and we can compare this directly to like a One-Hot Encoded Distribution where all probabilites are 0, except for the correct category, in which the probability is 100%. This is better than traditional error loss (like MSE). 
+<br>
+Cross-Entropy can actually take into account confidence of a vote *(demonstrated as a high probability guess on the model's part)* as well as well as directly penalizes the logarithm of the probability assigned to the correct class, which inherently aligns with the goal of classification to maximize the probability of the correct class. MSE, on the other hand, doesn't directly align with this goal and can lead to slower convergence in training due to its different mathematical properties.
 
+---
+
+https://github.com/ageron/handson-ml2/blob/master/10_neural_nets_with_keras.ipynb
 
